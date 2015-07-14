@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.10), see www.w3.org" charset=utf-8>
+<link type="text/css" rel="stylesheet" href="style.css">
+<!-- Copyright (c) 2001-2013 IEEE and The Open Group, All Rights Reserved -->
+<title>The Base Specifications Issue 7</title>
+</head>
+<body bgcolor="white">
+<img src="images/ieeelogo.gif" border="0" align="left"> <img src="images/opengrouplogo.gif" border="0" align="right"> 
+
+<center><font size="2">The Open Group Base Specifications Issue 7<br>
+IEEE Std 1003.1<sup>&trade;</sup>, 2013 Edition<br>
+<a href="copyr.html">Copyright</a> &copy; 2001-2013 The IEEE and The Open Group</font></center>
+
+<br clear="all">
+<hr size="2" noshade>
+GoTo: <a href="nfindex.html" target="_top">Non-Frames Index</a> | <a href="register.html">Register</a> 
+
+<p>Этот стандарт был совместно разработан IEEE и Open Group. Это одновременно IEEE Standard и Open Group Technical
+Standard.</p>
+
+<p><b>Abstract</b>:
+
+<p align="justify" style="margin-top: 0.07cm; margin-bottom: 0.07cm"><a name="pgfId-1005218" id="pgfId-1005218"></a> <font size=
+"2">POSIX.1-2008 - это одновременно IEEE Std 1003.1<sup>&trade;</sup>-2008 и The Open Group Technical Standard Base
+Specifications, Issue&nbsp;7.
+Эта редакция 2013-го включает IEEE Std 1003.1-2008/Cor 1-2013 интергрированный в
+IEEE Std 1003.1-2008 (базовый документ).
+The 2013 edition incorporates Technical Corrigendum 1 addressing problems discovered since the approval of the
+2008 edition.</font></p>
+&nbsp;<br>
+
+<p align="justify" style="margin-top: 0.07cm; margin-bottom: 0.07cm"><font size="2">POSIX.1-2008 определяет стандартный системный интерфейс и среду операционной системы,
+ включая командный интерпретатор (или &ldquo;оболочку(shell)&rdquo;), и общие программы-утилиты 
+ для поддержки портабельности приложений на уровне исходного кода.
+ Предполагается, что POSIX.1-2008 будет использоваться и разработчиками приложений 
+ и реализаторами системы и содержит четыре главных компонента (каждый в соответствующей главе):</font></p>
+
+<ul>
+<li>
+<p align="left" style="margin-top: 0.04cm; margin-bottom: 0cm"><font size="2">Основные концепции, положения, и интерфейсы
+общие для всех глав этого стандарта, включая соглашения утилит и определения хедеров языка C, включены в главу Базовые Определения
+.</font></p>
+</li>
+
+<li>
+<p align="left" style="margin-top: 0.04cm; margin-bottom: 0cm"><font size="2">Определения функций системных сервисов и подпрограмм,
+языко-зависимые системные сервисы для языка программирования C, функциональные проблемы, включая портабельность, 
+обработку ошибок, и воссановление после ошибок, включены в главу Системный Интерфейс.</font></p>
+</li>
+
+<li>
+<p align="left" style="margin-top: 0.04cm; margin-bottom: 0cm"><font size="2">
+Определения для стандартного интерфейса уровня исходного кода
+для сервиса интерпретации команд (&ldquo;оболочка(shell)&rdquo;) и общих программ-утилит для прикладных программ 
+включены в главу Оболочка и Утилиты.</font></p>
+</li>
+
+<li>
+<p align="left" style="margin-top: 0.04cm; margin-bottom: 0cm"><font size="2">
+Расширенное пояснение, которое не вошло в другую часть документа, 
+которое содержит историческую информацию относительно содержимого POSIX.1-2008 
+и почему фичи были включены или исключены разработчиками стадарта, включены в главу Пояснение.</font></p>
+</li>
+</ul>
+
+<p align="justify" style="margin-top: 0.07cm; margin-bottom: 0.07cm"><font size="2">
+Следующие области не рассматриваются в стандарте POSIX.1-2008:</font></p>
+
+<ul>
+<li>
+<p align="left" style="margin-top: 0.04cm; margin-bottom: 0cm"><font size="2">Графический интерфейс</font></p>
+</li>
+
+<li>
+<p align="left" style="margin-top: 0.04cm; margin-bottom: 0cm"><font size="2">Интерфейс систем управления базами данных</font></p>
+</li>
+
+<li>
+<p align="left" style="margin-top: 0.04cm; margin-bottom: 0cm"><font size="2">Record I/O considerations</font></p>
+</li>
+
+<li>
+<p align="left" style="margin-top: 0.04cm; margin-bottom: 0cm"><font size="2">Портабельность объектного и бинарного кода</font></p>
+</li>
+
+<li>
+<p align="left" style="margin-top: 0.04cm; margin-bottom: 0cm"><font size="2">Конфигурация системы и доступность ресурсов</font></p>
+</li>
+</ul>
+
+<p align="justify" style="margin-top: 0.07cm; margin-bottom: 0.07cm"><font size="2">
+POSIX.1-2008 описывает внешние характеристики и возможности(facilities) которые представляют важность для разработчиков приложений, 
+а не внутренние конструкционные техники требующиеся для достижения этих возможностей. 
+Специально отмечены те функции и возможности которые требуются для широкого круга(variety) коммерческих приложений.</font></p>
+
+<p style="margin-top: 0.28cm; margin-bottom: 0.07cm; page-break-after: avoid"><font face="Arial, sans-serif"><font size="2" style=
+"font-size: 9pt"><b>Ключевые слова</b></font></font></p>
+
+<p align="justify" style="margin-top: 0.07cm; margin-bottom: 0.07cm"><a name="pgfId-1016152" id="pgfId-1016152"></a> <font size=
+"2">
+прикладной программный интерфейс (API), 
+аргумент, асинхронный, базовые регулярные выражения (BRE), пакетное задание, пакетная система, 
+встроенная утилита, байт, потомок, интерпретатор командного языка, CPU, расширенные регулярные выражения (ERE), FIFO,
+ механизм контроля доступа к файлам, IEEE 1003.1<sup>&trade;</sup>,
+ввод/вывод (I/O), контрользадач, сеть, предок, портируемый интерфейс операционных систем (POSIX<sup>&reg;</sup>), оболочка, поток(stream),
+строка, синхронный, система, поток(thread), X/Open System Interface (XSI)</font></p>
+
+<h2>Frontmatter (<i>Informative</i>)</h2>
+
+<p>[ <a href="frontmatter/preface.html">Preface</a> | <a href="frontmatter/typographics.html">Typographical Conventions</a> | <a
+href="frontmatter/notice.html">Notice to Users</a> | <a href="frontmatter/participants.html">Participants</a> | <a href=
+"frontmatter/trademarks.html">Trademarks</a> | <a href="frontmatter/acknowl.html">Acknowledgements</a> | <a href=
+"frontmatter/refdocs.html">Referenced Documents</a> ]</p>
+
+<p>Tables of Contents by volume: [ <a href="basedefs/toc.html">XBD</a> | <a href="functions/toc.html">XSH</a> | <a href=
+"utilities/toc.html">XCU</a> | <a href="xrat/toc.html">XRAT</a> ]</p>
+
+<p>Links: [ <a href="idx/index.html">Alphabetic Index</a> | <a href="idx/topic.html">Topical Index</a> | <a href=
+"help/about.html">About the HTML version</a> | 
+<a href="download/index.html">Downloads</a> |
+<a href=
+"http://www.opengroup.org/austin/defectform.html">Report a defect</a> ]</p>
+
+<p>&nbsp;</p>
+
+<hr size="2" noshade>
+<center><font size="2">UNIX &reg; is a registered Trademark of The Open Group.<br>
+POSIX &reg; is a registered Trademark of The IEEE.<br>
+Copyright &copy; 2001-2013 The IEEE and The Open Group, All Rights Reserved<br>
+</font></center>
+
+<hr size="2" noshade>
+</body>
+</html>
+
