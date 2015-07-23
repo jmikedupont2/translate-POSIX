@@ -5,14 +5,25 @@ rm -rf $diffdir
 rm eqfiles
 mkdir $diffdir
 
+fileprepare(){
+	sed -z 's/\n/ /g' $1    | sed 's/>\(.\)/>\n\1/g; s/\(.\)</\1\n</g' | 
+	grep -v '^<' | grep -v '^[[:space:]]*$' | 
+	sed 's/&lt;/</g; s/&gt;/>/g; s/&nbsp;/ /g; s/&quot;/"/g;'
+}
+
 difffun(){
-    diff \
-	<(cat $1 | sed -z 's/\n/ /g' | sed 's/>\(.\)/>\n\1/g; s/\(.\)</\1\n</g' | grep -v '^<')\
-	<(cat en/$2 | sed -z 's/\n/ /g' | sed 's/>\(.\)/>\n\1/g; s/\(.\)</\1\n</g' | grep -v '^<')\
-	> $diffdir/$2 
-	ret=$?
-	[ $ret == 0 ] && echo !!!!!!!!!!!!! equal !!!!!!!!!! >> eqfiles
-	[ $ret != 2 ] && echo $1 en/$2 >> eqfiles
+	#[ $1 != ${1%\~} ] && echo ignore $1 && return || echo use $1
+	[ $1 != ${1%\~} ] && return 
+	[ ! -f en/$2 ] && echo can not open en/$2 && return
+	
+	[ ! -f $1~    ] && fileprepare    $1 > $1~
+	[ ! -f en/$2~ ] && fileprepare en/$2 > en/$2~
+
+    git diff --no-index --word-diff $1~ en/$2~ > $diffdir/$2~.diff
+    git diff --no-index --word-diff $1 en/$2 > $diffdir/$2.diff
+
+
+	echo $1 en/$2 >> eqfiles
 }
 
 subdir=
