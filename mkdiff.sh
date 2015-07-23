@@ -7,8 +7,8 @@ mkdir $diffdir
 
 difffun(){
     diff \
-	<(cat $1 | sed -z 's/\n/ /g' | runcpp begintag.c | runcpp endtag.c | grep -v '^<')\
-	<(cat en/$2 | sed -z 's/\n/ /g' | runcpp begintag.c | runcpp endtag.c | grep -v '^<')\
+	<(cat $1 | sed -z 's/\n/ /g' | sed 's/>\(.\)/>\n\1/g; s/\(.\)</\1\n</g' | grep -v '^<')\
+	<(cat en/$2 | sed -z 's/\n/ /g' | sed 's/>\(.\)/>\n\1/g; s/\(.\)</\1\n</g' | grep -v '^<')\
 	> $diffdir/$2 
 	ret=$?
 	[ $ret == 0 ] && echo !!!!!!!!!!!!! equal !!!!!!!!!! >> eqfiles
