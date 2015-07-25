@@ -1,9 +1,458 @@
+﻿<!--
+3.1 Преждевременный релиз (Abortive Release)
+3.2 Абсолютный путь-имя (Absolute Pathname)
+3.3 Режим доступа (Access Mode)
+3.4 Дополнительный механизм контроля доступа к файлам (Additional File Access Control Mechanism)
+3.5 Address Space
+3.6 Advisory Information
+3.7 Affirmative Response
+3.8 Alert
+3.9 Alert Character (<alert>)
+3.10 Alias Name
+3.11 Alignment
+3.12 Alternate File Access Control Mechanism
+3.13 Alternate Signal Stack
+3.14 Ancillary Data
+3.15 Angle Brackets
+3.16 Apostrophe Character (<apostrophe>)
+3.17 Application
+3.18 Application Address
+3.19 Application Program Interface (API)
+3.20 Appropriate Privileges
+3.21 Argument
+3.22 Arm (a Timer)
+3.23 Asterisk Character (<asterisk>)
+3.24 Async-Cancel-Safe Function
+3.25 Asynchronous Events
+3.26 Asynchronous Input and Output
+3.27 Async-Signal-Safe Function
+3.28 Asynchronously-Generated Signal
+3.29 Asynchronous I/O Completion
+3.30 Asynchronous I/O Operation
+3.31 Authentication
+3.32 Authorization
+3.33 Background Job
+3.34 Background Process
+3.35 Background Process Group (or Background Job)
+3.36 Backquote Character
+3.37 Backslash Character (<backslash>)
+3.38 Backspace Character (<backspace>)
+3.39 Barrier
+3.40 Basename
+3.41 Basic Regular Expression (BRE)
+3.42 Batch Access List
+3.43 Batch Administrator
+3.44 Batch Client
+3.45 Batch Destination
+3.46 Batch Destination Identifier
+3.47 Batch Directive
+3.48 Batch Job
+3.49 Batch Job Attribute
+3.50 Batch Job Identifier
+3.51 Batch Job Name
+3.52 Batch Job Owner
+3.53 Batch Job Priority
+3.54 Batch Job State
+3.55 Batch Name Service
+3.56 Batch Name Space
+3.57 Batch Node
+3.58 Batch Operator
+3.59 Batch Queue
+3.60 Batch Queue Attribute
+3.61 Batch Queue Position
+3.62 Batch Queue Priority
+3.63 Batch Rerunability
+3.64 Batch Restart
+3.65 Batch Server
+3.66 Batch Server Name
+3.67 Batch Service
+3.68 Batch Service Request
+3.69 Batch Submission
+3.70 Batch System
+3.71 Batch Target User
+3.72 Batch User
+3.73 Bind
+3.74 Blank Character (<blank>)
+3.75 Blank Line
+3.76 Blocked Process (or Thread)
+3.77 Blocking
+3.78 Block-Mode Terminal
+3.79 Block Special File
+3.80 Braces
+3.81 Brackets
+3.82 Broadcast
+3.83 Built-In Utility (or Built-In)
+3.84 Byte
+3.85 Byte Input/Output Functions
+3.86 Carriage-Return Character (<carriage-return>)
+3.87 Character
+3.88 Character Array
+3.89 Character Class
+3.90 Character Set
+3.91 Character Special File
+3.92 Character String
+3.93 Child Process
+3.94 Circumflex Character (<circumflex>)
+3.95 Clock
+3.96 Clock Jump
+3.97 Clock Tick
+3.98 Coded Character Set
+3.99 Codeset
+3.100 Collating Element
+3.101 Collation
+3.102 Collation Sequence
+3.103 Column Position
+3.104 Command
+3.105 Command Language Interpreter
+3.106 Composite Graphic Symbol
+3.107 Condition Variable
+3.108 Connected Socket
+3.109 Connection
+3.110 Connection Mode
+3.111 Connectionless Mode
+3.112 Control Character
+3.113 Control Operator
+3.114 Controlling Process
+3.115 Controlling Terminal
+3.116 Conversion Descriptor
+3.117 Core File
+3.118 CPU Time (Execution Time)
+3.119 CPU-Time Clock
+3.120 CPU-Time Timer
+3.121 Current Job
+3.122 Current Working Directory
+3.123 Cursor Position
+3.124 Datagram
+3.125 Data Segment
+3.126 Deferred Batch Service
+3.127 Device
+3.128 Device ID
+3.129 Directory
+3.130 Directory Entry (or Link)
+3.131 Directory Stream
+3.132 Disarm (a Timer)
+3.133 Display
+3.134 Display Line
+3.135 Dollar-Sign Character (<dollar-sign>)
+3.136 Dot
+3.137 Dot-Dot
+3.138 Double-Quote Character
+3.139 Downshifting
+3.140 Driver
+3.141 Effective Group ID
+3.142 Effective User ID
+3.143 Eight-Bit Transparency
+3.144 Empty Directory
+3.145 Empty Line
+3.146 Empty String (or Null String)
+3.147 Empty Wide-Character String
+3.148 Encoding Rule
+3.149 Entire Regular Expression
+3.150 Epoch
+3.151 Equivalence Class
+3.152 Era
+3.153 Event Management
+3.154 Executable File
+3.155 Execute
+3.156 Execution Time
+3.157 Execution Time Monitoring
+3.158 Expand
+3.159 Extended Regular Expression (ERE)
+3.160 Extended Security Controls
+3.161 Feature Test Macro
+3.162 Field
+3.163 FIFO Special File (or FIFO)
+3.164 File
+3.165 File Description
+3.166 File Descriptor
+3.167 File Group Class
+3.168 File Mode
+3.169 File Mode Bits
+3.170 Filename
+3.171 Filename String
+3.172 File Offset
+3.173 File Other Class
+3.174 File Owner Class
+3.175 File Permission Bits
+3.176 File Serial Number
+3.177 File System
+3.178 File Type
+3.179 Filter
+3.180 First Open (of a File)
+3.181 Flow Control
+3.182 Foreground Job
+3.183 Foreground Process
+3.184 Foreground Process Group (or Foreground Job)
+3.185 Foreground Process Group ID
+3.186 Form-Feed Character (<form-feed>)
+3.187 Graphic Character
+3.188 Group Database
+3.189 Group ID
+3.190 Group Name
+3.191 Hard Limit
+3.192 Hard Link
+3.193 Home Directory
+3.194 Host Byte Order
+3.195 Incomplete Line
+3.196 Inf
+3.197 Instrumented Application
+3.198 Interactive Shell
+3.199 Internationalization
+3.200 Interprocess Communication
+3.201 Invoke
+3.202 Job
+3.203 Job Control
+3.204 Job Control Job ID
+3.205 Last Close (of a File)
+3.206 Line
+3.207 Linger
+3.208 Link
+3.209 Link Count
+3.210 Local Customs
+3.211 Local Interprocess Communication (Local IPC)
+3.212 Locale
+3.213 Localization
+3.214 Login
+3.215 Login Name
+3.216 Map
+3.217 Marked Message
+3.218 Matched
+3.219 Memory Mapped Files
+3.220 Memory Object
+3.221 Memory-Resident
+3.222 Message
+3.223 Message Catalog
+3.224 Message Catalog Descriptor
+3.225 Message Queue
+3.226 Mode
+3.227 Monotonic Clock
+3.228 Mount Point
+3.229 Multi-Character Collating Element
+3.230 Mutex
+3.231 Name
+3.232 Named STREAM
+3.233 NaN (Not a Number)
+3.234 Native Language
+3.235 Negative Response
+3.236 Network
+3.237 Network Address
+3.238 Network Byte Order
+3.239 Newline Character (<newline>)
+3.240 Nice Value
+3.241 Non-Blocking
+3.242 Non-Spacing Characters
+3.243 NUL
+3.244 Null Byte
+3.245 Null Pointer
+3.246 Null String
+3.247 Null Wide-Character Code
+3.248 Number-Sign Character (<number-sign>)
+3.249 Object File
+3.250 Octet
+3.251 Offset Maximum
+3.252 Opaque Address
+3.253 Open File
+3.254 Open File Description
+3.255 Operand
+3.256 Operator
+3.257 Option
+3.258 Option-Argument
+3.259 Orientation
+3.260 Orphaned Process Group
+3.261 Page
+3.262 Page Size
+3.263 Parameter
+3.264 Parent Directory
+3.265 Parent Process
+3.266 Parent Process ID
+3.267 Pathname
+3.268 Pathname Component
+3.269 Path Prefix
+3.270 Pattern
+3.271 Period Character (<period>)
+3.272 Permissions
+3.273 Persistence
+3.274 Pipe
+3.275 Polling
+3.276 Portable Character Set
+3.277 Portable Filename
+3.278 Portable Filename Character Set
+3.279 Positional Parameter
+3.280 Preallocation
+3.281 Preempted Process (or Thread)
+3.282 Previous Job
+3.283 Printable Character
+3.284 Printable File
+3.285 Priority
+3.286 Priority Band
+3.287 Priority Inversion
+3.288 Priority Scheduling
+3.289 Priority-Based Scheduling
+3.290 Privilege
+3.291 Process
+3.292 Process Group
+3.293 Process Group ID
+3.294 Process Group Leader
+3.295 Process Group Lifetime
+3.296 Process ID
+3.297 Process Lifetime
+3.298 Process Memory Locking
+3.299 Process Termination
+3.300 Process-To-Process Communication
+3.301 Process Virtual Time
+3.302 Program
+3.303 Protocol
+3.304 Pseudo-Terminal
+3.305 Radix Character
+3.306 Read-Only File System
+3.307 Read-Write Lock
+3.308 Real Group ID
+3.309 Real Time
+3.310 Realtime Signal Extension
+3.311 Real User ID
+3.312 Record
+3.313 Redirection
+3.314 Redirection Operator
+3.315 Referenced Shared Memory Object
+3.316 Refresh
+3.317 Regular Expression
+3.318 Region
+3.319 Regular File
+3.320 Relative Pathname
+3.321 Relocatable File
+3.322 Relocation
+3.323 Requested Batch Service
+3.324 (Time) Resolution
+3.325 Robust Mutex
+3.326 Root Directory
+3.327 Runnable Process (or Thread)
+3.328 Running Process (or Thread)
+3.329 Saved Resource Limits
+3.330 Saved Set-Group-ID
+3.331 Saved Set-User-ID
+3.332 Scheduling
+3.333 Scheduling Allocation Domain
+3.334 Scheduling Contention Scope
+3.335 Scheduling Policy
+3.336 Screen
+3.337 Scroll
+3.338 Semaphore
+3.339 Session
+3.340 Session Leader
+3.341 Session Lifetime
+3.342 Shared Memory Object
+3.343 Shell
+3.344 Shell, the
+3.345 Shell Script
+3.346 Signal
+3.347 Signal Stack
+3.348 Single-Quote Character
+3.349 Slash Character (<slash>)
+3.350 Socket
+3.351 Socket Address
+3.352 Soft Limit
+3.353 Source Code
+3.354 Space Character (<space>)
+3.355 Spawn
+3.356 Special Built-In
+3.357 Special Parameter
+3.358 Spin Lock
+3.359 Sporadic Server
+3.360 Standard Error
+3.361 Standard Input
+3.362 Standard Output
+3.363 Standard Utilities
+3.364 Stream
+3.365 STREAM
+3.366 STREAM End
+3.367 STREAM Head
+3.368 STREAMS Multiplexor
+3.369 String
+3.370 Subshell
+3.371 Successfully Transferred
+3.372 Supplementary Group ID
+3.373 Suspended Job
+3.374 Symbolic Constant
+3.375 Symbolic Link
+3.376 Synchronized Input and Output
+3.377 Synchronized I/O Completion
+3.378 Synchronized I/O Data Integrity Completion
+3.379 Synchronized I/O File Integrity Completion
+3.380 Synchronized I/O Operation
+3.381 Synchronous I/O Operation
+3.382 Synchronously-Generated Signal
+3.383 System
+3.384 System Boot
+3.385 System Clock
+3.386 System Console
+3.387 System Crash
+3.388 System Databases
+3.389 System Documentation
+3.390 System Process
+3.391 System Reboot
+3.392 System Trace Event
+3.393 System-Wide
+3.394 Tab Character (<tab>)
+3.395 Terminal (or Terminal Device)
+3.396 Text Column
+3.397 Text File
+3.398 Thread
+3.399 Thread ID
+3.400 Thread List
+3.401 Thread-Safe
+3.402 Thread-Specific Data Key
+3.403 Tilde Character (<tilde>)
+3.404 Timeouts
+3.405 Timer
+3.406 Timer Overrun
+3.407 Token
+3.408 Trace Analyzer Process
+3.409 Trace Controller Process
+3.410 Trace Event
+3.411 Trace Event Type
+3.412 Trace Event Type Mapping
+3.413 Trace Filter
+3.414 Trace Generation Version
+3.415 Trace Log
+3.416 Trace Point
+3.417 Trace Stream
+3.418 Trace Stream Identifier
+3.419 Trace System
+3.420 Traced Process
+3.421 Tracing Status of a Trace Stream
+3.422 Typed Memory Name Space
+3.423 Typed Memory Object
+3.424 Typed Memory Pool
+3.425 Typed Memory Port
+3.426 Unbind
+3.427 Unit Data
+3.428 Upshifting
+3.429 User Database
+3.430 User ID
+3.431 User Name
+3.432 User Trace Event
+3.433 Utility
+3.434 Variable
+3.435 Vertical-Tab Character (<vertical-tab>)
+3.436 White Space
+3.437 Wide-Character Code (C Language)
+3.438 Wide-Character Input/Output Functions
+3.439 Wide-Character String
+3.440 Word
+3.441 Working Directory (or Current Working Directory)
+3.442 Worldwide Portability Interface
+3.443 Write
+3.444 XSI
+3.445 XSI-Conformant
+3.446 Zombie Process
+3.447 ±0
+-->
 <!-- Copyright 2001-2013 IEEE and The Open Group, All Rights Reserved -->
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
 <meta name="generator" content="HTML Tidy, see www.w3.org">
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link type="text/css" rel="stylesheet" href="style.css"><!-- Generated by The Open Group's rhtm tool v1.2.4 -->
 <!-- Copyright (c) 2001-2013 The Open Group, All Rights Reserved -->
 <title>Definitions</title>
@@ -12,9 +461,9 @@
 <div class="NAVHEADER">
 <table class="nav" summary="Header navigation table" width="100%" border="0" cellpadding="0" cellspacing="0">
 <tr class="nav">
-<td class="nav" width="15%" align="left" valign="bottom"><a href="V1_chap02.html" accesskey="P">&lt;&lt;&lt; Previous</a></td>
-<td class="nav" width="70%" align="center" valign="bottom"><a href="contents.html">Home</a></td>
-<td class="nav" width="15%" align="right" valign="bottom"><a href="V1_chap04.html" accesskey="N">Next &gt;&gt;&gt;</a></td>
+<td class="nav" width="15%" align="left" valign="bottom"><a href="V1_chap02.html" accesskey="P">&lt;&lt;&lt; Назад</a></td>
+<td class="nav" width="70%" align="center" valign="bottom"><a href="contents.html">Домой</a></td>
+<td class="nav" width="15%" align="right" valign="bottom"><a href="V1_chap04.html" accesskey="N">Вперед &gt;&gt;&gt;</a></td>
 </tr>
 </table>
 
@@ -24,74 +473,76 @@
 
 <basefont size="3"> 
 
-<center><font size="2">The Open Group Base Specifications Issue 7<br>
+<center><font size="2">The Open Group Базовая спецификация Проблема 7<br>
 IEEE Std 1003.1, 2013 Edition<br>
 Copyright &copy; 2001-2013 The IEEE and The Open Group</font></center>
 
 <hr size="2" noshade>
 <a name="top"></a> 
 
-<h2><a name="tag_03">  3. </a>Definitions</h2>
+<h2><a name="tag_03">  3. </a>Определения</h2>
 
-<p>For the purposes of POSIX.1-2008, the following terms and definitions apply. The Authoritative Dictionary of IEEE Standards
-Terms, Seventh Edition should be referenced for terms not defined in this section. <basefont size="2"></p>
+<p>Для целей POSIX.1-2008, применяются следующие термины и определения. 
+Для терминов, не определенных в этом разделе, должна быть ссылка на Официальный Словарь Терминов Стандартов IEEE, седбмая редакция. 
+<basefont size="2"></p>
 
 <dl>
-<dt><b>Note:</b></dt>
+<dt><b>Обратите внимание:</b></dt>
 
-<dd>No shading to denote extensions or options occurs in this chapter. Where the terms and definitions given in this chapter are
-used elsewhere in text related to extensions and options, they are shaded as appropriate.</dd>
+<dd>В этой главе не применяется затенение для обозначения расширений и опций. 
+Термины и определения в этой главе будут затеняться там, где они используются 
+в тексте, соответствующем расширениям и опциям.</dd>
 </dl>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_01">   3.1 </a>Abortive Release</h3>
+<h3><a name="tag_03_01">   3.1 </a>Преждевременный релиз (Abortive Release)</h3>
 
 <p>An abrupt termination of a network connection that may result in the loss of data.</p>
 
-<h3><a name="tag_03_02">   3.2 </a>Absolute Pathname</h3>
+<h3><a name="tag_03_02">   3.2 </a>Абсолютный путь-имя (Absolute Pathname)</h3>
 
-<p>A pathname beginning with a single or more than two &lt;slash&gt; characters; see also <a href="V1_chap03.html#tag_03_267">Pathname</a>.
+<p>A pathname beginning with a single or more than two &lt;slash&gt; characters; 
+см. также <a href="V1_chap03.html#tag_03_267">Имя-путь (Pathname)</a>.
 <basefont size="2"></p>
 
 <dl>
-<dt><b>Note:</b></dt>
+<dt><b>Обратите внимание:</b></dt>
 
-<dd>Pathname Resolution is defined in detail in <a href="V1_chap04.html#tag_04_12"><i>Pathname Resolution</i></a>
+<dd>Раскрытие пути-имени детально определено в <a href="V1_chap04.html#tag_04_12"><i>Раскрытие пути-имени</i></a>
 .</dd>
 </dl>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_03">   3.3 </a>Access Mode</h3>
+<h3><a name="tag_03_03">   3.3 </a>Режим доступа (Access Mode)</h3>
 
 <p>A particular form of access permitted to a file.</p>
 
-<h3><a name="tag_03_04">   3.4 </a>Additional File Access Control Mechanism</h3>
+<h3><a name="tag_03_04">   3.4 </a>Дополнительный механизм контроля доступа к файлам (Additional File Access Control Mechanism)</h3>
 
-<p>An implementation-defined mechanism that is layered upon the access control mechanisms defined here, but which do not grant
-permissions beyond those defined herein, although they may further restrict them. <basefont size="2"></p>
+<p>Механизм, зависящий от реализации, который работает поверх механизма контроля оступа, определенного здесь, 
+но который не предоставляет прав, определенных здесь, а также они могут ограничиваться им. <basefont size="2"></p>
 
 <dl>
-<dt><b>Note:</b></dt>
+<dt><b>Обратите внимание:</b></dt>
 
-<dd>File Access Permissions are defined in detail in <a href="V1_chap04.html#tag_04_04"><i>File Access
-Permissions</i></a>.</dd>
+<dd>Права доступа к файлам детально определены в <a href="V1_chap04.html#tag_04_04"><i>Права доступа к файлам</i></a>.</dd>
 </dl>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_05">   3.5 </a>Address Space</h3>
+<h3><a name="tag_03_05">   3.5 </a>Адресное пространство (Address Space)</h3>
 
 <p>The memory locations that can be referenced by a process or the threads of a process.</p>
 
-<h3><a name="tag_03_06">   3.6 </a>Advisory Information</h3>
+<h3><a name="tag_03_06">   3.6 </a>Дополнительная информация (Advisory Information)</h3>
 
-<p>An interface that advises the implementation on (portable) application behavior so that it can optimize the system.</p>
+<p>Интерфейс, который информирует реализация о поведении (портируемого) приложения так, что она может оптимизировать систему.</p>
 
-<h3><a name="tag_03_07">   3.7 </a>Affirmative Response</h3>
+<h3><a name="tag_03_07">   3.7 </a>Положительный ответ (Affirmative Response)</h3>
 
-<p>An input string that matches one of the responses acceptable to the <i>LC_MESSAGES</i> category keyword <b>yesexpr</b>, matching
+<p>Входная строка, которая подходит ля ответов, принимаемых <i>LC_MESSAGES</i> category keyword <b>yesexpr</b>, matching
 an extended regular expression in the current locale. <basefont size="2"></p>
 
 <dl>
@@ -103,20 +554,20 @@ an extended regular expression in the current locale. <basefont size="2"></p>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_08">   3.8 </a>Alert</h3>
+<h3><a name="tag_03_08">   3.8 </a>Оповещение (Alert)</h3>
 
 <p>To cause the user's terminal to give some audible or visual indication that an error or some other event has occurred. When the
 standard output is directed to a terminal device, the method for alerting the terminal user is unspecified. When the standard
 output is not directed to a terminal device, the alert is accomplished by writing the alert to standard output (unless the utility
 description indicates that the use of standard output produces undefined results in this case).</p>
 
-<h3><a name="tag_03_09">   3.9 </a>Alert Character (&lt;alert&gt;)</h3>
+<h3><a name="tag_03_09">   3.9 </a>Символ оповещения (Alert Character) (&lt;alert&gt;)</h3>
 
 <p>A character that in the output stream should cause a terminal to alert its user via a visual or audible notification. It is the
 character designated by <tt>'\a'</tt> in the C language. It is unspecified whether this character is the exact sequence transmitted
 to an output device by the system to accomplish the alert function.</p>
 
-<h3><a name="tag_03_10">   3.10 </a>Alias Name</h3>
+<h3><a name="tag_03_10">   3.10 </a>Имя псевдонима (Alias Name)</h3>
 
 <p>In the shell command language, a word consisting solely of underscores, digits, and alphabetics from the portable character set
 and any of the following characters: <tt>'!'</tt>, <tt>'%'</tt>, <tt>','</tt>, <tt>'@'</tt>.</p>
@@ -132,7 +583,7 @@ Set</i></a>.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_11">   3.11 </a>Alignment</h3>
+<h3><a name="tag_03_11">   3.11 </a>Выравнивание (Alignment)</h3>
 
 <p>A requirement that objects of a particular type be located on storage boundaries with addresses that are particular multiples of
 a byte address. <basefont size="2"></p>
@@ -145,7 +596,7 @@ a byte address. <basefont size="2"></p>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_12">   3.12 </a>Alternate File Access Control Mechanism</h3>
+<h3><a name="tag_03_12">   3.12 </a>Альтернативный механизм контроля доступа к файлам (Alternate File Access Control Mechanism)</h3>
 
 <p>An implementation-defined mechanism that is independent of the access control mechanisms defined herein, and which if enabled on
 a file may either restrict or extend the permissions of a given user. POSIX.1-2008 defines when such mechanisms can be enabled and
@@ -160,40 +611,40 @@ Permissions</i></a>.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_13">   3.13 </a>Alternate Signal Stack</h3>
+<h3><a name="tag_03_13">   3.13 </a>Альтернативный стек сигналов (Alternate Signal Stack)</h3>
 
 <p>Memory associated with a thread, established upon request by the implementation for a thread, separate from the thread signal
 stack, in which signal handlers responding to signals sent to that thread may be executed.</p>
 
-<h3><a name="tag_03_14">   3.14 </a>Ancillary Data</h3>
+<h3><a name="tag_03_14">   3.14 </a>Дополнительные данные (Ancillary Data)</h3>
 
 <p>Protocol-specific, local system-specific, or optional information. The information can be both local or end-to-end significant,
 header information, part of a data portion, protocol-specific, and implementation or system-specific.</p>
 
-<h3><a name="tag_03_15">   3.15 </a>Angle Brackets</h3>
+<h3><a name="tag_03_15">   3.15 </a>Угловые скобки (Angle Brackets)</h3>
 
 <p>The characters <tt>'&lt;'</tt> (left-angle-bracket) and <tt>'&gt;'</tt> (right-angle-bracket). When used in the phrase
 &quot;enclosed in angle brackets&quot;, the symbol <tt>'&lt;'</tt> immediately precedes the object to be enclosed, and <tt>'&gt;'</tt>
 immediately follows it. When describing these characters in the portable character set, the names &lt;less-than-sign&gt; and
 &lt;greater-than-sign&gt; are used.</p>
 
-<h3><a name="tag_03_16">   3.16 </a>Apostrophe Character (&lt;apostrophe&gt;)</h3>
+<h3><a name="tag_03_16">   3.16 </a>Символ апострофа (Apostrophe Character) (&lt;apostrophe&gt;)</h3>
 
 <p>The character designated by <tt>'\&quot;</tt> in the C language, also known as the single-quote character.</p>
 
-<h3><a name="tag_03_17">   3.17 </a>Application</h3>
+<h3><a name="tag_03_17">   3.17 </a>Приложение (Application)</h3>
 
 <p>A computer program that performs some desired function.</p>
 
-<h3><a name="tag_03_18">   3.18 </a>Application Address</h3>
+<h3><a name="tag_03_18">   3.18 </a>Адрес приложения (Application Address)</h3>
 
 <p>Endpoint address of a specific application.</p>
 
-<h3><a name="tag_03_19">   3.19 </a>Application Program Interface (API)</h3>
+<h3><a name="tag_03_19">   3.19 </a>Интерфейс прикладного программирования (Application Program Interface) (API)</h3>
 
 <p>The definition of syntax and semantics for providing computer system services.</p>
 
-<h3><a name="tag_03_20">   3.20 </a>Appropriate Privileges</h3>
+<h3><a name="tag_03_20">   3.20 </a>Соответствующие привелегии (Appropriate Privileges)</h3>
 
 <p>An implementation-defined means of associating privileges with a process with regard to the function calls, function call
 options, and the commands that need special privileges. There may be zero or more such means. These means (or lack thereof) are
@@ -208,7 +659,7 @@ volume of POSIX.1-2008.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_21">   3.21 </a>Argument</h3>
+<h3><a name="tag_03_21">   3.21 </a>Аргумент (Argument)</h3>
 
 <p>In the shell command language, a parameter passed to a utility as the equivalent of a single string in the <i>argv</i> array
 created by one of the <i>exec</i> functions. An argument is one of the options, option-arguments, or operands following the command
@@ -226,35 +677,35 @@ Syntax</i></a> and XCU <a href="../utilities/V3_chap02.html#tag_18_09_01_01"><i>
 <p>In the C language, an expression in a function call expression or a sequence of preprocessing tokens in a function-like macro
 invocation.</p>
 
-<h3><a name="tag_03_22">   3.22 </a>Arm (a Timer)</h3>
+<h3><a name="tag_03_22">   3.22 </a>Ручной таймер (Arm (a Timer))</h3>
 
 <p>To start a timer measuring the passage of time, enabling notifying a process when the specified time or time interval has
 passed.</p>
 
-<h3><a name="tag_03_23">   3.23 </a>Asterisk Character (&lt;asterisk&gt;)</h3>
+<h3><a name="tag_03_23">   3.23 </a>Символ звездочка (Asterisk Character) (&lt;asterisk&gt;)</h3>
 
 <p>The character <tt>'*'</tt>.</p>
 
-<h3><a name="tag_03_24">   3.24 </a>Async-Cancel-Safe Function</h3>
+<h3><a name="tag_03_24">   3.24 </a>Функция асинхронной безопасной отмены (Async-Cancel-Safe Function)</h3>
 
 <p>A function that may be safely invoked by an application while the asynchronous form of cancellation is enabled. No function is
 async-cancel-safe unless explicitly described as such.</p>
 
-<h3><a name="tag_03_25">   3.25 </a>Asynchronous Events</h3>
+<h3><a name="tag_03_25">   3.25 </a>Асинхронные сбытия (Asynchronous Events)</h3>
 
 <p>Events that occur independently of the execution of the application.</p>
 
-<h3><a name="tag_03_26">   3.26 </a>Asynchronous Input and Output</h3>
+<h3><a name="tag_03_26">   3.26 </a>Асинхронный ввод и вывод (Asynchronous Input and Output)</h3>
 
 <p>A functionality enhancement to allow an application process to queue data input and output commands with asynchronous
 notification of completion.</p>
 
-<h3><a name="tag_03_27">   3.27 </a>Async-Signal-Safe Function</h3>
+<h3><a name="tag_03_27">   3.27 </a>Функция асинхронного безопасного сигнала (Async-Signal-Safe Function)</h3>
 
 <p>A function that may be invoked, without restriction, from signal-catching functions. No function is async-signal-safe unless
 explicitly described as such.</p>
 
-<h3><a name="tag_03_28">   3.28 </a>Asynchronously-Generated Signal</h3>
+<h3><a name="tag_03_28">   3.28 </a>Асинхронно-генерируемый сигнал (Asynchronously-Generated Signal)</h3>
 
 <p>A signal that is not attributable to a specific thread. Examples are signals sent via <a href=
 "../functions/kill.html"><i>kill</i>()</a>, signals sent from the keyboard, and signals delivered to process groups. Being
@@ -270,50 +721,50 @@ POSIX.1-2008.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_29">   3.29 </a>Asynchronous I/O Completion</h3>
+<h3><a name="tag_03_29">   3.29 </a>Асинхронное завершение В/В (Asynchronous I/O Completion)</h3>
 
 <p>For an asynchronous read or write operation, when a corresponding synchronous read or write would have completed and when any
 associated status fields have been updated.</p>
 
-<h3><a name="tag_03_30">   3.30 </a>Asynchronous I/O Operation</h3>
+<h3><a name="tag_03_30">   3.30 </a>Асинхронная операция В/В (Asynchronous I/O Operation)</h3>
 
 <p>An I/O operation that does not of itself cause the thread requesting the I/O to be blocked from further use of the
 processor.</p>
 
 <p>This implies that the process and the I/O operation may be running concurrently.</p>
 
-<h3><a name="tag_03_31">   3.31 </a>Authentication</h3>
+<h3><a name="tag_03_31">   3.31 </a>Аутентификация (Authentication)</h3>
 
 <p>The process of validating a user or process to verify that the user or process is not a counterfeit.</p>
 
-<h3><a name="tag_03_32">   3.32 </a>Authorization</h3>
+<h3><a name="tag_03_32">   3.32 </a>Авторизация (Authorization)</h3>
 
 <p>The process of verifying that a user or process has permission to use a resource in the manner requested.</p>
 
 <p>To ensure security, the user or process would also need to be authenticated before granting access.</p>
 
-<h3><a name="tag_03_33">   3.33 </a>Background Job</h3>
+<h3><a name="tag_03_33">   3.33 </a>Фоновая задача (Background Job)</h3>
 
 <p>See <i>Background Process Group</i> in <a href="V1_chap03.html#tag_03_35">Background Process Group (or Background Job)</a>.</p>
 
-<h3><a name="tag_03_34">   3.34 </a>Background Process</h3>
+<h3><a name="tag_03_34">   3.34 </a>Фоновый процесс (Background Process)</h3>
 
 <p>A process that is a member of a background process group.</p>
 
-<h3><a name="tag_03_35">   3.35 </a>Background Process Group (or Background Job)</h3>
+<h3><a name="tag_03_35">   3.35 </a>Группа фоновых процессов (или фоновая задача) (Background Process Group (or Background Job))</h3>
 
 <p>Any process group, other than a foreground process group, that is a member of a session that has established a connection with a
 controlling terminal.</p>
 
-<h3><a name="tag_03_36">   3.36 </a>Backquote Character</h3>
+<h3><a name="tag_03_36">   3.36 </a>Символ обратной кавычки (Backquote Character)</h3>
 
 <p>The character <tt>'`'</tt>, also known as &lt;grave-accent&gt;.</p>
 
-<h3><a name="tag_03_37">   3.37 </a>Backslash Character (&lt;backslash&gt;)</h3>
+<h3><a name="tag_03_37">   3.37 </a>Символ обратного слеша (Backslash Character) (&lt;backslash&gt;)</h3>
 
 <p>The character designated by <tt>'\\'</tt> in the C language, also known as reverse solidus.</p>
 
-<h3><a name="tag_03_38">   3.38 </a>Backspace Character (&lt;backspace&gt;)</h3>
+<h3><a name="tag_03_38">   3.38 </a>Символ Backspace (Backspace Character) (&lt;backspace&gt;)</h3>
 
 <p>A character that, in the output stream, should cause printing (or displaying) to occur one column position previous to the
 position about to be printed. If the position about to be printed is at the beginning of the current line, the behavior is
@@ -330,15 +781,15 @@ not necessarily the ERASE special character. <basefont size="2"></p>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_39">   3.39 </a>Barrier</h3>
+<h3><a name="tag_03_39">   3.39 </a>Барьер (Barrier)</h3>
 
 <p>A synchronization object that allows multiple threads to synchronize at a particular point in their execution.</p>
 
-<h3><a name="tag_03_40">   3.40 </a>Basename</h3>
+<h3><a name="tag_03_40">   3.40 </a>Основное имя (Basename)</h3>
 
 <p>The final, or only, filename in a pathname.</p>
 
-<h3><a name="tag_03_41">   3.41 </a>Basic Regular Expression (BRE)</h3>
+<h3><a name="tag_03_41">   3.41 </a>Базовое регулярное выражение (Basic Regular Expression (BRE))</h3>
 
 <p>A regular expression (see <a href="V1_chap03.html#tag_03_317">Regular Expression</a>) used by the majority of utilities that select strings
 from a set of character strings. <basefont size="2"></p>
@@ -352,25 +803,25 @@ Expressions</i></a>.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_42">   3.42 </a>Batch Access List</h3>
+<h3><a name="tag_03_42">   3.42 </a>Список пакетного доступа (Batch Access List)</h3>
 
 <p>A list of user IDs and group IDs of those users and groups authorized to place batch jobs in a batch queue.</p>
 
 <p>A batch access list is associated with a batch queue. A batch server uses the batch access list of a batch queue as one of the
 criteria in deciding to put a batch job in a batch queue.</p>
 
-<h3><a name="tag_03_43">   3.43 </a>Batch Administrator</h3>
+<h3><a name="tag_03_43">   3.43 </a>Пакетный администратор (Batch Administrator)</h3>
 
 <p>A user that is authorized to modify all the attributes of queues and jobs and to change the status of a batch server.</p>
 
-<h3><a name="tag_03_44">   3.44 </a>Batch Client</h3>
+<h3><a name="tag_03_44">   3.44 </a>Пакетный клиент (Batch Client)</h3>
 
 <p>A computational entity that utilizes batch services by making requests of batch servers.</p>
 
 <p>Batch clients often provide the means by which users access batch services, although a batch server may act as a batch client by
 virtue of making requests of another batch server.</p>
 
-<h3><a name="tag_03_45">   3.45 </a>Batch Destination</h3>
+<h3><a name="tag_03_45">   3.45 </a>Пакетное назначение (Batch Destination)</h3>
 
 <p>The batch server in a batch system to which a batch job should be sent for processing.</p>
 
@@ -378,7 +829,7 @@ virtue of making requests of another batch server.</p>
 consist of a batch server-specific portion, a network-wide portion, or both. The batch server-specific portion is referred to as
 the &quot;batch queue&quot;. The network-wide portion is referred to as a &quot;batch server name&quot;.</p>
 
-<h3><a name="tag_03_46">   3.46 </a>Batch Destination Identifier</h3>
+<h3><a name="tag_03_46">   3.46 </a>Идентификатор назначения пакета (Batch Destination Identifier)</h3>
 
 <p>A string that identifies a specific batch destination.</p>
 
@@ -393,7 +844,7 @@ Set</i></a>.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_47">   3.47 </a>Batch Directive</h3>
+<h3><a name="tag_03_47">   3.47 </a>Пакетная директива (Batch Directive)</h3>
 
 <p>A line from a file that is interpreted by the batch server. The line is usually in the form of a comment and is an additional
 means of passing options to the <a href="../utilities/qsub.html"><i>qsub</i></a> utility. <basefont size="2"></p>
@@ -407,7 +858,7 @@ POSIX.1-2008.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_48">   3.48 </a>Batch Job</h3>
+<h3><a name="tag_03_48">   3.48 </a>Пакетная задача (Batch Job)</h3>
 
 <p>A set of computational tasks for a computing system.</p>
 
@@ -416,28 +867,28 @@ POSIX.1-2008.</dd>
 <p>Once created, a batch job may be executing or pending execution. A batch job that is executing has an associated session leader
 (a process) that initiates and monitors the computational tasks of the batch job.</p>
 
-<h3><a name="tag_03_49">   3.49 </a>Batch Job Attribute</h3>
+<h3><a name="tag_03_49">   3.49 </a>Атрибут пакетной задачи (Batch Job Attribute)</h3>
 
 <p>A named data type whose value affects the processing of a batch job.</p>
 
 <p>The values of the attributes of a batch job affect the processing of that job by the batch server that manages the batch
 job.</p>
 
-<h3><a name="tag_03_50">   3.50 </a>Batch Job Identifier</h3>
+<h3><a name="tag_03_50">   3.50 </a>Идентификатор пакетной задачи (Batch Job Identifier)</h3>
 
 <p>A unique name for a batch job. A name that is unique among all other batch job identifiers in a batch system and that identifies
 the batch server to which the batch job was originally submitted.</p>
 
-<h3><a name="tag_03_51">   3.51 </a>Batch Job Name</h3>
+<h3><a name="tag_03_51">   3.51 </a>Имя пакетной задачи (Batch Job Name)</h3>
 
 <p>A label that is an attribute of a batch job. The batch job name is not necessarily unique.</p>
 
-<h3><a name="tag_03_52">   3.52 </a>Batch Job Owner</h3>
+<h3><a name="tag_03_52">   3.52 </a>Владелец пакетной задачи (Batch Job Owner)</h3>
 
 <p>The <i>username</i>@ <i>hostname</i> of the user submitting the batch job, where <i>username</i> is a user name (see also <a
 href="V1_chap03.html#tag_03_431">User Name</a>) and <i>hostname</i> is a network host name.</p>
 
-<h3><a name="tag_03_53">   3.53 </a>Batch Job Priority</h3>
+<h3><a name="tag_03_53">   3.53 </a>Приоритет пакетной задачи (Batch Job Priority)</h3>
 
 <p>A value specified by the user that may be used by an implementation to determine the order in which batch jobs are selected to
 be executed. Job priority has a numeric value in the range -1024 to 1023. <basefont size="2"></p>
@@ -450,21 +901,21 @@ be executed. Job priority has a numeric value in the range -1024 to 1023. <basef
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_54">   3.54 </a>Batch Job State</h3>
+<h3><a name="tag_03_54">   3.54 </a>Состояние пакетной задачи (Batch Job State)</h3>
 
 <p>An attribute of a batch job which determines the types of requests that the batch server that manages the batch job can accept
 for the batch job. Valid states include QUEUED, RUNNING, HELD, WAITING, EXITING, and TRANSITING.</p>
 
-<h3><a name="tag_03_55">   3.55 </a>Batch Name Service</h3>
+<h3><a name="tag_03_55">   3.55 </a>Сервис пакетных имен (Batch Name Service)</h3>
 
 <p>A service that assigns batch names that are unique within the batch name space, and that can translate a unique batch name into
 the location of the named batch entity.</p>
 
-<h3><a name="tag_03_56">   3.56 </a>Batch Name Space</h3>
+<h3><a name="tag_03_56">   3.56 </a>Пространство пакетных имен (Batch Name Space)</h3>
 
 <p>The environment within which a batch name is known to be unique.</p>
 
-<h3><a name="tag_03_57">   3.57 </a>Batch Node</h3>
+<h3><a name="tag_03_57">   3.57 </a>Пакетный узел (Batch Node)</h3>
 
 <p>A host containing part or all of a batch system.</p>
 
@@ -484,12 +935,12 @@ the location of the named batch entity.</p>
 </li>
 </ul>
 
-<h3><a name="tag_03_58">   3.58 </a>Batch Operator</h3>
+<h3><a name="tag_03_58">   3.58 </a>Пакетный оператор (Batch Operator)</h3>
 
 <p>A user that is authorized to modify some, but not all, of the attributes of jobs and queues, and may change the status of the
 batch server.</p>
 
-<h3><a name="tag_03_59">   3.59 </a>Batch Queue</h3>
+<h3><a name="tag_03_59">   3.59 </a>Пакетная очередь (Batch Queue)</h3>
 
 <p>A manageable object that represents a set of batch jobs and is managed by a single batch server. <basefont size="2"></p>
 
@@ -505,39 +956,39 @@ execution based on attributes such as priority, resource requirements, and hold 
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_60">   3.60 </a>Batch Queue Attribute</h3>
+<h3><a name="tag_03_60">   3.60 </a>Атрибут пакетной очереди (Batch Queue Attribute)</h3>
 
 <p>A named data type whose value affects the processing of all batch jobs that are members of the batch queue.</p>
 
 <p>A batch queue has attributes that affect the processing of batch jobs that are members of the batch queue.</p>
 
-<h3><a name="tag_03_61">   3.61 </a>Batch Queue Position</h3>
+<h3><a name="tag_03_61">   3.61 </a>Позиция в пакетной очереди (Batch Queue Position)</h3>
 
 <p>The place, relative to other jobs in the batch queue, occupied by a particular job in a batch queue. This is defined in part by
 submission time and priority; see also <a href="V1_chap03.html#tag_03_62">Batch Queue Priority</a>.</p>
 
-<h3><a name="tag_03_62">   3.62 </a>Batch Queue Priority</h3>
+<h3><a name="tag_03_62">   3.62 </a>Приоритет в пакетной очереди (Batch Queue Priority)</h3>
 
 <p>The maximum job priority allowed for any batch job in a given batch queue.</p>
 
 <p>The batch queue priority is set and may be changed by users with appropriate privileges. The priority is bounded in an
 implementation-defined manner.</p>
 
-<h3><a name="tag_03_63">   3.63 </a>Batch Rerunability</h3>
+<h3><a name="tag_03_63">   3.63 </a>Перезапускаемость пакета (Batch Rerunability)</h3>
 
 <p>An attribute of a batch job indicating that it may be rerun after an abnormal termination from the beginning without affecting
 the validity of the results.</p>
 
-<h3><a name="tag_03_64">   3.64 </a>Batch Restart</h3>
+<h3><a name="tag_03_64">   3.64 </a>Перезапуск пакета (Batch Restart)</h3>
 
 <p>The action of resuming the processing of a batch job from the point of the last checkpoint. Typically, this is done if the batch
 job has been interrupted because of a system failure.</p>
 
-<h3><a name="tag_03_65">   3.65 </a>Batch Server</h3>
+<h3><a name="tag_03_65">   3.65 </a>Пакетный сервер (Batch Server)</h3>
 
 <p>A computational entity that provides batch services.</p>
 
-<h3><a name="tag_03_66">   3.66 </a>Batch Server Name</h3>
+<h3><a name="tag_03_66">   3.66 </a>Имя пакетного сервера (Batch Server Name)</h3>
 
 <p>A string of characters in the portable character set used to specify a particular server in a network. <basefont size="2"></p>
 
@@ -550,7 +1001,7 @@ Set</i></a>.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_67">   3.67 </a>Batch Service</h3>
+<h3><a name="tag_03_67">   3.67 </a>Пакетный сервис (Batch Service)</h3>
 
 <p>Computational and organizational services performed by a batch system on behalf of batch jobs.</p>
 
@@ -564,7 +1015,7 @@ Set</i></a>.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_68">   3.68 </a>Batch Service Request</h3>
+<h3><a name="tag_03_68">   3.68 </a>Запрос пакетного сервиса (Batch Service Request)</h3>
 
 <p>A solicitation of services from a batch client to a batch server.</p>
 
@@ -573,50 +1024,50 @@ Set</i></a>.</dd>
 <p>When naming specific types of service requests, the term &quot;request&quot; is qualified by the type of request, as in <i>Queue Batch
 Job Request</i> and <i>Delete Batch Job Request</i>.</p>
 
-<h3><a name="tag_03_69">   3.69 </a>Batch Submission</h3>
+<h3><a name="tag_03_69">   3.69 </a>Запуск пакета (Batch Submission)</h3>
 
 <p>The process by which a batch client requests that a batch server create a batch job via a <i>Queue Job Request</i> to perform a
 specified computational task.</p>
 
-<h3><a name="tag_03_70">   3.70 </a>Batch System</h3>
+<h3><a name="tag_03_70">   3.70 </a>Пакетная система (Batch System)</h3>
 
 <p>A collection of one or more batch servers.</p>
 
-<h3><a name="tag_03_71">   3.71 </a>Batch Target User</h3>
+<h3><a name="tag_03_71">   3.71 </a>Целевой пользователь пакета (Batch Target User)</h3>
 
 <p>The name of a user on the batch destination batch server.</p>
 
 <p>The target user is the user name under whose account the batch job is to execute on the destination batch server.</p>
 
-<h3><a name="tag_03_72">   3.72 </a>Batch User</h3>
+<h3><a name="tag_03_72">   3.72 </a>Пользователь пакета (Batch User)</h3>
 
 <p>A user who is authorized to make use of batch services.</p>
 
-<h3><a name="tag_03_73">   3.73 </a>Bind</h3>
+<h3><a name="tag_03_73">   3.73 </a>Связывание (Bind)</h3>
 
 <p>The process of assigning a network address to an endpoint.</p>
 
-<h3><a name="tag_03_74">   3.74 </a>Blank Character (&lt;blank&gt;)</h3>
+<h3><a name="tag_03_74">   3.74 </a>Пробельный символ (Blank Character) (&lt;blank&gt;)</h3>
 
 <p>One of the characters that belong to the <b>blank</b> character class as defined via the <i>LC_CTYPE</i> category in the current
 locale. In the POSIX locale, a &lt;blank&gt; character is either a &lt;tab&gt; or a &lt;space&gt;.</p>
 
-<h3><a name="tag_03_75">   3.75 </a>Blank Line</h3>
+<h3><a name="tag_03_75">   3.75 </a>Пустая строка (Blank Line)</h3>
 
 <p>A line consisting solely of zero or more &lt;blank&gt; characters terminated by a &lt;newline&gt;; see also <a href=
 "V1_chap03.html#tag_03_145">Empty Line</a>.</p>
 
-<h3><a name="tag_03_76">   3.76 </a>Blocked Process (or Thread)</h3>
+<h3><a name="tag_03_76">   3.76 </a>Бокированный процесс или поток (Blocked Process (or Thread))</h3>
 
 <p>A process (or thread) that is waiting for some condition (other than the availability of a processor) to be satisfied before it
 can continue execution.</p>
 
-<h3><a name="tag_03_77">   3.77 </a>Blocking</h3>
+<h3><a name="tag_03_77">   3.77 </a>Блокирование (Blocking)</h3>
 
 <p>A property of an open file description that causes function calls associated with it to wait for the requested action to be
 performed before returning.</p>
 
-<h3><a name="tag_03_78">   3.78 </a>Block-Mode Terminal</h3>
+<h3><a name="tag_03_78">   3.78 </a>Блочный режим терминала (Block-Mode Terminal)</h3>
 
 <p>A terminal device operating in a mode incapable of the character-at-a-time input and output operations described by some of the
 standard utilities. <basefont size="2"></p>
@@ -630,30 +1081,30 @@ Terminal Types</i></a>.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_79">   3.79 </a>Block Special File</h3>
+<h3><a name="tag_03_79">   3.79 </a>Блочный специальный файл (Block Special File)</h3>
 
 <p>A file that refers to a device. A block special file is normally distinguished from a character special file by providing access
 to the device in a manner such that the hardware characteristics of the device are not visible.</p>
 
-<h3><a name="tag_03_80">   3.80 </a>Braces</h3>
+<h3><a name="tag_03_80">   3.80 </a>Фигурные скобки (Braces)</h3>
 
 <p>The characters <tt>'{'</tt> (left-curly-bracket) and <tt>'}'</tt> (right-curly-bracket). When used in the phrase &quot;enclosed in
 (curly) braces&quot; the symbol <tt>'{'</tt> immediately precedes the object to be enclosed, and <tt>'}'</tt> immediately follows it.
 When describing these characters in the portable character set, the names &lt;left-curly-bracket&gt; and &lt;left-brace&gt; are
 used for <tt>'{'</tt>, and &lt;right-curly-bracket&gt; and &lt;right-brace&gt; are used for <tt>'}'</tt>.</p>
 
-<h3><a name="tag_03_81">   3.81 </a>Brackets</h3>
+<h3><a name="tag_03_81">   3.81 </a>Квадратные скобки (Brackets)</h3>
 
 <p>The characters <tt>'['</tt> (left-square-bracket) and <tt>']'</tt> (right-square-bracket). When used in the phrase &quot;enclosed in
 (square) brackets&quot; the symbol <tt>'['</tt> immediately precedes the object to be enclosed, and <tt>']'</tt> immediately follows
 it. When describing these characters in the portable character set, the names &lt;left-square-bracket&gt; and
 &lt;right-square-bracket&gt; are used.</p>
 
-<h3><a name="tag_03_82">   3.82 </a>Broadcast</h3>
+<h3><a name="tag_03_82">   3.82 </a>Вещание (Broadcast)</h3>
 
 <p>The transfer of data from one endpoint to several endpoints, as described in RFC&nbsp;919 and RFC&nbsp;922.</p>
 
-<h3><a name="tag_03_83">   3.83 </a>Built-In Utility (or Built-In)</h3>
+<h3><a name="tag_03_83">   3.83 </a>Встроенная утилита (Built-In Utility (or Built-In))</h3>
 
 <p>A utility implemented within a shell. The utilities referred to as special built-ins have special qualities. Unless qualified,
 the term &quot;built-in&quot; includes the special built-in utilities. Regular built-ins are not required to be actually built into the
@@ -672,7 +1123,7 @@ and Execution</i></a>.</p>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_84">   3.84 </a>Byte</h3>
+<h3><a name="tag_03_84">   3.84 </a>Байт (Byte)</h3>
 
 <p>An individually addressable unit of data storage that is exactly an octet, used to store a character or a portion of a
 character; see also <a href="V1_chap03.html#tag_03_87">Character</a>. A byte is composed of a contiguous sequence of 8 bits. The least
@@ -687,7 +1138,7 @@ different sized addressable units than octets.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_85">   3.85 </a>Byte Input/Output Functions</h3>
+<h3><a name="tag_03_85">   3.85 </a>Функции байтового ввода-вывода (Byte Input/Output Functions)</h3>
 
 <p>The functions that perform byte-oriented input from streams or byte-oriented output to streams: <a href=
 "../functions/fgetc.html"><i>fgetc</i>()</a>, <a href="../functions/fgets.html"><i>fgets</i>()</a>, <a href=
@@ -710,14 +1161,14 @@ different sized addressable units than octets.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_86">   3.86 </a>Carriage-Return Character (&lt;carriage-return&gt;)</h3>
+<h3><a name="tag_03_86">   3.86 </a>Символ возврата каретки (Carriage-Return Character) (&lt;carriage-return&gt;)</h3>
 
 <p>A character that in the output stream indicates that printing should start at the beginning of the same physical line in which
 the carriage-return occurred. It is the character designated by <tt>'\r'</tt> in the C language. It is unspecified whether this
 character is the exact sequence transmitted to an output device by the system to accomplish the movement to the beginning of the
 line.</p>
 
-<h3><a name="tag_03_87">   3.87 </a>Character</h3>
+<h3><a name="tag_03_87">   3.87 </a>Символ (Character)</h3>
 
 <p>A sequence of one or more bytes representing a single graphic symbol or control code. <basefont size="2"></p>
 
@@ -736,11 +1187,11 @@ encodings.</p>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_88">   3.88 </a>Character Array</h3>
+<h3><a name="tag_03_88">   3.88 </a>МАссив символов (Character Array)</h3>
 
 <p>An array of elements of type <b>char</b>.</p>
 
-<h3><a name="tag_03_89">   3.89 </a>Character Class</h3>
+<h3><a name="tag_03_89">   3.89 </a>Символьный класс (Character Class)</h3>
 
 <p>A named set of characters sharing an attribute associated with the name of the class. The classes and the characters that they
 contain are dependent on the value of the <i>LC_CTYPE</i> category in the current locale. <basefont size="2"></p>
@@ -754,11 +1205,11 @@ contain are dependent on the value of the <i>LC_CTYPE</i> category in the curren
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_90">   3.90 </a>Character Set</h3>
+<h3><a name="tag_03_90">   3.90 </a>Набор символов (Character Set)</h3>
 
 <p>A finite set of different characters used for the representation, organization, or control of data.</p>
 
-<h3><a name="tag_03_91">   3.91 </a>Character Special File</h3>
+<h3><a name="tag_03_91">   3.91 </a>Специальный символьный файл (Character Special File)</h3>
 
 <p>A file that refers to a device (such as a terminal device file) or that has special properties (such as <b>/dev/null</b>).
 <basefont size="2"></p>
@@ -772,11 +1223,11 @@ Interface</i></a>.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_92">   3.92 </a>Character String</h3>
+<h3><a name="tag_03_92">   3.92 </a>Символьная строка (Character String)</h3>
 
 <p>A contiguous sequence of characters terminated by and including the first null byte.</p>
 
-<h3><a name="tag_03_93">   3.93 </a>Child Process</h3>
+<h3><a name="tag_03_93">   3.93 </a>Дочерний процесс (Child Process)</h3>
 
 <p>A new process created (by <a href="../functions/fork.html"><i>fork</i>()</a>, <a href=
 "../functions/posix_spawn.html"><i>posix_spawn</i>()</a>, or <a href="../functions/posix_spawnp.html"><i>posix_spawnp</i>()</a>) by
@@ -793,33 +1244,33 @@ of POSIX.1-2008.</dd>
 
 <basefont size="3"> 
 
-<h3><a name="tag_03_94">   3.94 </a>Circumflex Character (&lt;circumflex&gt;)</h3>
+<h3><a name="tag_03_94">   3.94 </a>Символ-галка (Circumflex Character) (&lt;circumflex&gt;)</h3>
 
 <p>The character <tt>'^'</tt>.</p>
 
-<h3><a name="tag_03_95">   3.95 </a>Clock</h3>
+<h3><a name="tag_03_95">   3.95 </a>Часы (Clock)</h3>
 
 <p>A software or hardware object that can be used to measure the apparent or actual passage of time.</p>
 
 <p>The current value of the time measured by a clock can be queried and, possibly, set to a value within the legal range of the
 clock.</p>
 
-<h3><a name="tag_03_96">   3.96 </a>Clock Jump</h3>
+<h3><a name="tag_03_96">   3.96 </a>Прыжок часов (Clock Jump)</h3>
 
 <p>The difference between two successive distinct values of a clock, as observed from the application via one of the &quot;get time''
 operations.</p>
 
-<h3><a name="tag_03_97">   3.97 </a>Clock Tick</h3>
+<h3><a name="tag_03_97">   3.97 </a>Такт часов (Clock Tick)</h3>
 
 <p>An interval of time; an implementation-defined number of these occur each second. Clock ticks are one of the units that may be
 used to express a value found in type <b>clock_t</b>.</p>
 
-<h3><a name="tag_03_98">   3.98 </a>Coded Character Set</h3>
+<h3><a name="tag_03_98">   3.98 </a>Набор кодов символов (Coded Character Set)</h3>
 
 <p>A set of unambiguous rules that establishes a character set and the one-to-one relationship between each character of the set
 and its bit representation.</p>
 
-<h3><a name="tag_03_99">   3.99 </a>Codeset</h3>
+<h3><a name="tag_03_99">   3.99 </a>Набор кодов (Codeset)</h3>
 
 <p>The result of applying rules that map a numeric code value to each element of a character set. An element of a character set may
 be related to more than one numeric code value but the reverse is not true. However, for state-dependent encodings the relationship
@@ -3710,19 +4161,21 @@ default output destination for all uses of the term &quot;write''; see the disti
 
 <h3><a name="tag_03_444">   3.444 </a>XSI</h3>
 
-<p>The X/Open System Interfaces (XSI) option is the core application programming interface for C and <a href=
-"../utilities/sh.html"><i>sh</i></a> programming for systems conforming to the Single UNIX Specification. This is a superset of the
-mandatory requirements for conformance to POSIX.1-2008.</p>
+<p>Опция системного интерфейса X/Open (XSI) - основной интерфейс прикладного программирования для C и <a href=
+"../utilities/sh.html"><i>sh</i></a> для системного соответствия Single UNIX Specification. 
+Это набор обязаельных требований для POSIX.1-2008.</p>
 
-<h3><a name="tag_03_445">   3.445 </a>XSI-Conformant</h3>
+<h3><a name="tag_03_445">   3.445 </a>Соответствие XSI (XSI-Conformant)</h3>
 
-<p>A system which allows an application to be built using a set of services that are consistent across all systems that conform to
-POSIX.1-2008 and that support the XSI option. <basefont size="2"></p>
+<p>
+Система, которая позволяет приложению быть собранным, используя набор сервисов, 
+которые согласуются со всеми системами, которые соответствуют POSIX.1-2008 
+и которые поддерживают опцию XSI. <basefont size="2"></p>
 
 <dl>
-<dt><b>Note:</b></dt>
+<dt><b>Обратите внимание:</b></dt>
 
-<dd>See also <a href="V1_chap02.html#tag_02"><i>Conformance</i></a>.</dd>
+<dd>См. также <a href="V1_chap02.html#tag_02"><i>Соответствие</i></a>.</dd>
 </dl>
 
 <basefont size="3"> 

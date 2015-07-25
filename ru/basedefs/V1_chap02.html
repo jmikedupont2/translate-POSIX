@@ -39,11 +39,11 @@ Copyright &copy; 2001-2013 The IEEE and The Open Group</font></center>
 
 <h3><a name="tag_02_01">   2.1 </a>Соответствие реализации</h3>
 
-<p>Для целей POSIX.1-2008, реализаци требований соответствия дана в следующей секции.</p>
+<p>Для целей POSIX.1-2008, реализация требований соответствия дана в следующей секции.</p>
 
 <h4><a name="tag_02_01_01">  2.1.1 </a>Требования</h4>
 
-<p><i>Соответствие реализации</i> должно встречать все следующие критерии:</p>
+<p><i>Соответствующая реализация</i> должна встречать все следующие критерии:</p>
 
 <ol>
 <li>
@@ -54,17 +54,18 @@ Copyright &copy; 2001-2013 The IEEE and The Open Group</font></center>
 </li>
 
 <li>
-<p>Система может(may) поддерживать опцию системного интерфейса X/Open (X/Open System Interfaces) (XSI), как описано в <a href="V1_chap02.html#tag_02_01_04">соответствие XSI</a>
+<p>Система может поддерживать опцию X/Open System Interfaces (XSI), как описано в 
+<a href="V1_chap02.html#tag_02_01_04">соответствии XSI</a>
 .</p>
 </li>
 
 <li>
-<p>Система может(may) поддерживать одну или более опций под <a href="V1_chap02.html#tag_02_01_05">Группами Опций</a>. 
-Когда реализация заявляет, что опци поддерживается, должны предоставляться все ее составные части.</p>
+<p>Система может поддерживать одну или более опций под <a href="V1_chap02.html#tag_02_01_05">Группами Опций</a>. 
+Когда реализация заявляет, что опция поддерживается, должны предоставляться все ее составные части.</p>
 </li>
 
 <li>
-<p>Сисиема может(may) предоставлять нестандартные расширения. 
+<p>Сисиема может предоставлять нестандартные расширения. 
 Эти возможности не требуются POSIX.1-2008, и могут включать следующее и не только:</p>
 
 <ul>
@@ -102,7 +103,7 @@ Copyright &copy; 2001-2013 The IEEE and The Open Group</font></center>
 </li>
 
 <li>
-<p>Динамично-заполняемые файловые системы (к примеру, <b>/proc</b>)</p>
+<p>Динамически-заполняемые файловые системы (к примеру, <b>/proc</b>)</p>
 </li>
 
 <li>
@@ -121,25 +122,27 @@ Copyright &copy; 2001-2013 The IEEE and The Open Group</font></center>
 
 <h4><a name="tag_02_01_02">  2.1.2 </a>Документация</h4>
 
-<p>A conformance document with the following information shall be available for an implementation claiming conformance to
-POSIX.1-2008. The conformance document shall have the same structure as POSIX.1-2008, with the information presented in the
-appropriate sections and subsections. Sections and subsections that consist solely of subordinate section titles, with no other
-information, are not required. The conformance document shall not contain information about extended facilities or capabilities
-outside the scope of POSIX.1-2008.</p>
+<p>Документ соответствия со следующей информацией должен быть доступен для реализаций, заявляющих соответствие POSIX.1-2008. 
+Документ соответствия должен иметь такую же структуру как POSIX.1-2008, 
+с информаций, приведенной в соответствующих разделах и подразделах. 
+Разделы и подразделы, которые содержат только второстепенные разделы заголовков, без другой информации, не требуются. 
+Документ соответствия не должен содержать информацию о дополнительных средствах и возможностях за пределами области POSIX.1-2008.</p>
 
-<p>The conformance document shall contain a statement that indicates the full name, number, and date of the standard that applies.
-The conformance document may also list international software standards that are available for use by a Conforming POSIX
-Application. Applicable characteristics where documentation is required by one of these standards, or by standards of government
-bodies, may also be included.</p>
+<p>Документ соответствия долен содержать положения, которые содержат полное имя, число, и дату стандарта, который применяется.
+Документ соответствия может также перечислять список международных стандартов ПО, 
+которые доступны для использования Приложений, соответствующих POSIX. 
+Также могут быть включены применимые характеристики, где документация требуется одним из этих стандартов, 
+или содержанием государственных стандартов.</p>
 
-<p>The conformance document shall describe the limit values found in the headers <a href=
-"limits.h.html"><i>&lt;limits.h&gt;</i></a> and <a href="unistd.h.html"><i>&lt;unistd.h&gt;</i></a>,
-stating values, the conditions under which those values may change, and the limits of such variations, if any.</p>
+<p>Документ соответствия должен описывать значения лимитов в хедерах <a href=
+"limits.h.html"><i>&lt;limits.h&gt;</i></a> и <a href="unistd.h.html"><i>&lt;unistd.h&gt;</i></a>,
+заявленные значения, условия, при которых эти значения могут меняться, и пределы таких иименений, если потребуется.</p>
 
-<p>The conformance document shall describe the behavior of the implementation for all implementation-defined features defined in
-POSIX.1-2008. This requirement shall be met by listing these features and providing either a specific reference to the system
-documentation or providing full syntax and semantics of these features. When the value or behavior in the implementation is
-designed to be variable or customized on each instantiation of the system, the implementation provider shall document the nature
+<p>Документ соответствия должен описывать поведение реализации для всех особенностей, зависящих от реализации в POSIX.1-2008. 
+Это требование должно быть встречено списком этих особенностей 
+и предоставлением специальной справки для системной документации 
+или предоставлением полного синтаксиса и семантики этих особенностей. 
+When the value or behavior in the implementation is designed to be variable or customized on each instantiation of the system, the implementation provider shall document the nature
 and permissible ranges of this variation.</p>
 
 <p>The conformance document may specify the behavior of the implementation for those features where POSIX.1-2008 states that
@@ -156,51 +159,52 @@ the information can be found in the system documentation.</p>
 
 <h4><a name="tag_02_01_03">  2.1.3 </a>Соответствие POSIX</h4>
 
-<p>A conforming implementation shall meet the following criteria for POSIX conformance.</p>
+<p>Соответствующая реализация должна встречать следующие критерии для соответствия POSIX.</p>
 
-<h5><a name="tag_02_01_03_01"></a>POSIX System Interfaces</h5>
+<h5><a name="tag_02_01_03_01"></a>Системный интерфейс POSIX</h5>
 
-<p>The following requirements apply to the system interfaces (functions and headers):</p>
+<p>Следующие требования применяются к системным интерфейсам (функции и хедеры):</p>
 
 <ul>
 <li>
-<p>The system shall support all the mandatory functions and headers defined in POSIX.1-2008, and shall set the symbolic constant
-_POSIX_VERSION to the value 200809L.</p>
+<p>Система должна поддерживать все обязательные функции и хедеры, определенные в POSIX.1-2008, 
+и должна устанавливать символьную константу _POSIX_VERSION в значение 200809L.</p>
 </li>
 
 <li>
-<p>Although all implementations conforming to POSIX.1-2008 support all the features described below, there may be system-dependent
-or file system-dependent configuration procedures that can remove or modify any or all of these features. Such configurations
-should not be made if strict compliance is required.</p>
+<p>Также, все реализации, ссоответствующие POSIX.1-2008, поддерживают все особенности, перечисленные ниже, 
+там могут быть системно-зависимые или файлово-системно-зависимые(file system-dependent) процедуры конфигурации, 
+которые могут удалять или редактировать любую из этих особенностей. 
+Такие конфигурации не должны произвоиться, если требуется строгое соответствие.</p>
 
-<p>The following symbolic constants shall be defined with a value other than -1. If a constant is defined with the value zero,
-applications should use the <a href="../functions/sysconf.html"><i>sysconf</i>()</a>, <a href=
-"../functions/pathconf.html"><i>pathconf</i>()</a>, or <a href="../functions/fpathconf.html"><i>fpathconf</i>()</a> functions, or
-the <a href="../utilities/getconf.html"><i>getconf</i></a> utility, to determine which features are present on the system at that
-time or for the particular pathname in question.</p>
+<p>Следующие символьные константы должны определяться со значением, отличным от -1. 
+Если константа определена со значением ноль, 
+приложения должны использовать функции <a href="../functions/sysconf.html"><i>sysconf</i>()</a>, 
+<a href="../functions/pathconf.html"><i>pathconf</i>()</a>, или <a href="../functions/fpathconf.html"><i>fpathconf</i>()</a>, 
+или утилиту <a href="../utilities/getconf.html"><i>getconf</i></a>, для определения, какие возможности присутствуют в системе в момент времени или для заданного пути-имени.</p>
 
 <ul>
 <li>
 <p>_POSIX_CHOWN_RESTRICTED</p>
 
-<p>The use of <a href="../functions/chown.html"><i>chown</i>()</a> is restricted to a process with appropriate privileges, and to
-changing the group ID of a file only to the effective group ID of the process or to one of its supplementary group IDs.</p>
+<p>Использование <a href="../functions/chown.html"><i>chown</i>()</a> ограничено для раоты с соответствующими привелегиями, 
+и для изменения ID'а группы файла на эффективный ID группы процесса или на один из дополнительных ID'ов групп.</p>
 </li>
 
 <li>
 <p>_POSIX_NO_TRUNC</p>
 
-<p>Pathname components longer than {NAME_MAX} generate an error.</p>
+<p>Компоненты пути-имени, длиннее чем {NAME_MAX} генерируют ошибку.</p>
 </li>
 </ul>
 </li>
 
 <li>
-<p>The following symbolic constants shall be defined by the implementation as follows:</p>
+<p>Следующие символьные константы должны быть определены реализацией как следующие:</p>
 
 <ul>
 <li>
-<p>Symbolic constants defined with the value 200809L:</p>
+<p>Символьные константы, определенные со значением 200809L:</p>
 
 <blockquote>
 <pre>
@@ -222,7 +226,7 @@ _POSIX_TIMERS
 </li>
 
 <li>
-<p>Symbolic constants defined with a value greater than zero:</p>
+<p>Символьные константы со значением большим, чем ноль:</p>
 
 <blockquote>
 <pre>
@@ -233,7 +237,7 @@ _POSIX_SAVED_IDS
 </li>
 
 <li>
-<p>Symbolic constants defined with a value other than -1.</p>
+<p>Символьные константы, определенные со значением, отличным от -1.</p>
 
 <blockquote>
 <pre>
@@ -246,18 +250,18 @@ _POSIX_VDISABLE
 <basefont size="2"> 
 
 <dl>
-<dt><b>Note:</b></dt>
+<dt><b>Обратите внимание:</b></dt>
 
-<dd>The symbols above represent historical options that are no longer allowed as options, but are retained here for
-backwards-compatibility of applications.</dd>
+<dd>Символы, перечисленные выше, представляют исторические опции, которые не длинее позволенного для опций, 
+но сохранены здесь для обратной совместимости приложений.</dd>
 </dl>
 
 <basefont size="3"><br>
 </li>
 
 <li>
-<p>The system may support one or more options (see <a href="V1_chap02.html#tag_02_01_06">Options</a>) denoted by the following symbolic
-constants:</p>
+<p>Система может поддерживать одну или более опций (см. <a href="V1_chap02.html#tag_02_01_06">Опции</a>),
+обозначаемых следующими символьными константами:</p>
 
 <blockquote>
 <pre>
@@ -297,30 +301,33 @@ _XOPEN_UNIX
 </pre>
 </blockquote>
 
-<p>If any of the symbolic constants _POSIX_TRACE_EVENT_FILTER, _POSIX_TRACE_LOG, or _POSIX_TRACE_INHERIT is defined to have a value
-other than -1, then the symbolic constant _POSIX_TRACE shall also be defined to have a value other than -1.</p>
+<p>Если одна из исмвольных констант _POSIX_TRACE_EVENT_FILTER, _POSIX_TRACE_LOG, или _POSIX_TRACE_INHERIT 
+определена в значение, отличное от -1, 
+тогда символьная константа _POSIX_TRACE должна быть также определена в значение, отличное от -1.</p>
 
-<p>If the Advisory Information option is supported, there shall be at least one file system that supports the functionality.</p>
+<p>Если поддерживается опция Дополнительная информация (Advisory Information), 
+должна присутствовать по крайней мере одна файловая система, поддерживающая эту информацию.</p>
 </li>
 </ul>
 
-<h5><a name="tag_02_01_03_02"></a>POSIX Shell and Utilities</h5>
+<h5><a name="tag_02_01_03_02"></a>Оболчка и утилиты POSIX</h5>
 
-<p>The following requirements apply to the shell and utilities:</p>
+<p>Следующие требования применяются к оболочке и утилитам:</p>
 
 <ul>
 <li>
-<p>The system shall provide all the mandatory utilities in the Shell and Utilities volume of POSIX.1-2008 with all the functional
-behavior described therein.</p>
+<p>Система должна предоставлять все обязательные утилиты, из главы POSIX.1-2008 Оболочка и утилиты 
+ со всем функциональным поведением, описанным там.</p>
 </li>
 
 <li>
-<p>The system shall support the Large File capabilities described in the Shell and Utilities volume of POSIX.1-2008.</p>
+<p>Система должна поддерживать возможности Больших Файлов описанных в части POSIX.1-2008 Оболочка и утилиты.</p>
 </li>
 
 <li>
-<p>The system may support one or more options (see <a href="V1_chap02.html#tag_02_01_06">Options</a>) denoted by the following symbolic
-constants. (The literal names below apply to the <a href="../utilities/getconf.html"><i>getconf</i></a> utility.)</p>
+<p>Система может поддерживать одну или более опций (см. <a href="V1_chap02.html#tag_02_01_06">Опции</a>),
+обозначенных следующими символными константами. 
+(Эти имена применяются утилитой <a href="../utilities/getconf.html"><i>getconf</i></a>.)</p>
 
 <blockquote>
 <pre>
@@ -343,38 +350,39 @@ XOPEN_UUCP
 </li>
 </ul>
 
-<p>Additional language bindings and development utility options may be provided in other related standards or in a future version
-of this standard. In the former case, additional symbolic constants of the same general form as shown in this subsection should be
-defined by the related standard document and made available to the application without requiring POSIX.1-2008 to be updated.</p>
+<p>Дополнительные опции связок языков и утилит разработки могу предоставляться в других аналогичных стандартах 
+или будущих версиях этого стандарта. 
+В первом случае, дополнительные символьные стандаррты в такойже форме как и показаны в этом подразделе
+будут определены аналогичными документами стнадартов и доступны приложения без требования обновления POSIX.1-2008.</p>
 
 <h4><a name="tag_02_01_04">  2.1.4 </a>Соответствие XSI</h4>
 
 <p><sup>[<a href="javascript:open_code('XSI')">XSI</a>]</sup> <img src="../images/opt-start.gif" alt="[Option Start]" border="0">
-This section describes the criteria for implementations providing conformance to the X/Open System Interfaces (XSI) option (see <a
-href="V1_chap03.html#tag_03_444"><i>XSI</i></a>). The functionality described in this section shall be provided on
-implementations that support the XSI option (and the rest of this section is not further marked). <img src="../images/opt-end.gif"
-alt="[Option End]" border="0"></p>
+Этот раздел описывает критерии для реализаций, предоставляющих соответствие опции X/Open System Interfaces (XSI) 
+(см. <a href="V1_chap03.html#tag_03_444"><i>XSI</i></a>). 
+Функциональность, описанная в этом разделе, должна предоставляться на реализаций, поддерживающих опцию XSI 
+(и оставшаяся часть этой секции не отмечена). <img src="../images/opt-end.gif" alt="[Option End]" border="0"></p>
 
-<p>POSIX.1-2008 describes utilities, functions, and facilities offered to application programs by the X/Open System Interfaces
-(XSI) option. An XSI-conforming implementation shall meet the criteria for POSIX conformance and the following requirements listed
-in this section.</p>
+<p>POSIX.1-2008 описывает утилиты, функции, и средства, предоставляемые прикладными программам опцией X/Open System Interfaces
+(XSI). XSI-соответствующая должна удовлетворять критериям POSIX-сооветствия и следующим критериям, перечисленным в этом разделе.</p>
 
-<p>XSI-conforming implementations shall set the symbolic constant _XOPEN_UNIX to a value other than -1 and shall set the symbolic
-constant _XOPEN_VERSION to the value 700.</p>
+<p>XSI-соответствующая реализация должна устанавливать символьную константу _XOPEN_UNIX в значение, отличное от -1 
+и должна устанавливать символьную константу _XOPEN_VERSION в значение 700.</p>
 
-<h5><a name="tag_02_01_04_01"></a>XSI System Interfaces</h5>
+<h5><a name="tag_02_01_04_01"></a>Системный интерфейс XSI (XSI System Interfaces)</h5>
 
-<p>The following requirements apply to the system interfaces when the XSI option is supported:</p>
+<p>Следующие требования применяются к системному интерфейсу гогда поддерживается опция XSI:</p>
 
 <ul>
 <li>
-<p>The system shall support all the functions and headers defined in POSIX.1-2008 as part of the XSI option denoted by the XSI
-marking in the SYNOPSIS section, and any extensions marked with the XSI option marking (see <a href=
-"V1_chap01.html#tag_01_07_01"><i>Codes</i></a>) within the text.</p>
+<p>Система должна поддерживать все функции и хедеры POSIX.1-2008 как часть опции XSI отмеченные пометкой XSI в разделе СИНТАКСИС, 
+и любые расширения, отмеченные меткой XSI (см. <a href=
+"V1_chap01.html#tag_01_07_01"><i>Коды</i></a>) в тексте.</p>
 </li>
 
 <li>
-<p>The system shall support the following options defined within POSIX.1-2008 (see <a href="V1_chap02.html#tag_02_01_06">Options</a>):</p>
+<p>Система должна поддерживать следующие опции, определеные в POSIX.1-2008 
+(см. <a href="V1_chap02.html#tag_02_01_06">Опции</a>):</p>
 
 <blockquote>
 <pre>
@@ -387,8 +395,8 @@ _POSIX_THREAD_PROCESS_SHARED
 </li>
 
 <li>
-<p>The system may support the following XSI Option Groups (see <a href="V1_chap02.html#tag_02_01_05_02">XSI Option Groups</a>) defined within
-POSIX.1-2008:</p>
+<p>Система может поддерживать следующие группы опций XSI 
+(см. <a href="V1_chap02.html#tag_02_01_05_02">Группы опций XSI</a>) определенные в POSIX.1-2008:</p>
 
 <ul>
 <li>
@@ -422,31 +430,34 @@ POSIX.1-2008:</p>
 </li>
 </ul>
 
-<h5><a name="tag_02_01_04_02"></a>XSI Shell and Utilities Conformance</h5>
+<h5><a name="tag_02_01_04_02"></a>Соответствие Оболочки и утилит XSI</h5>
 
-<p>The following requirements apply to the shell and utilities when the XSI option is supported:</p>
+<p>Следующие требования применяются к оболочке и утилитам, когда поддерживается опция XSI:</p>
 
 <ul>
 <li>
-<p>The system shall support all the utilities defined in the Shell and Utilities volume of POSIX.1-2008 as part of the XSI option
-denoted by the XSI marking in the SYNOPSIS section, and any extensions marked with the XSI option marking (see <a href=
-"V1_chap01.html#tag_01_07_01"><i>Codes</i></a>) within the text.</p>
+<p>Система должна поддерживать все утилиты, определенные в части POSIX.1-2008 Оболочка и утилиты, 
+как часть опции XSI отмеченные меткой XSI в разделе СИНТАКСИС, 
+и любые расширения, отмеченные меткой XSI (see <a href=
+"V1_chap01.html#tag_01_07_01"><i>Коды</i></a>) в тексте.</p>
 </li>
 
 <li>
-<p>The system shall support the User Portability Utilities option and the Terminal Characteristics option.</p>
+<p>Система должна поддерживать опция Утилит пользовательской портируемости(User Portability Utilities) 
+и опция Характеристик терминала (Terminal Characteristics).</p>
 </li>
 
 <li>
-<p>The system shall support creation of locales (see <a href="V1_chap07.html#tag_07"><i>Locale</i></a>).</p>
+<p>Система должна подерживать создание локалей (см. <a href="V1_chap07.html#tag_07"><i>Локаль</i></a>).</p>
 </li>
 
 <li>
-<p>The C-language Development utility <a href="../utilities/c99.html"><i>c99</i></a> shall be supported.</p>
+<p>Утилиты разработки языка C <a href="../utilities/c99.html"><i>c99</i></a> должны поддкрживаться.</p>
 </li>
 
 <li>
-<p>The XSI Development Utilities option may be supported. It consists of the following software development utilities:</p>
+<p>Может поддерживаться опция утилит разработки XSI. 
+Она содержит следующие утилиты разработки ПО:</p>
 
 <blockquote>
 <table cellpadding="3">
@@ -489,30 +500,35 @@ denoted by the XSI marking in the SYNOPSIS section, and any extensions marked wi
 
 <h4><a name="tag_02_01_05">  2.1.5 </a>Группы опций</h4>
 
-<p>An Option Group is a group of related functions or options defined within the System Interfaces volume of POSIX.1-2008.</p>
+<p>Группа опций это группа похожих функций или опций, определенных в части POSIX.1-2008 Системный интерфейс.</p>
 
-<p>If an implementation supports an Option Group, then the system shall support the functional behavior described herein.</p>
+<p>Если реализация поддерживает Группу опций, тогда система должна поддерживать поведение функций, определенных там.</p>
 
-<p>If an implementation does not support an Option Group, then the system need not support the functional behavior described
-herein.</p>
+<p>Если реализация не поддерживает Группу опций, тогда системе не требуется поддерживать поведение функций, описанных там.</p>
 
-<h5><a name="tag_02_01_05_01"></a>Subprofiling Considerations</h5>
+<h5><a name="tag_02_01_05_01"></a>Соглашения о подпрофилях</h5>
 
-<p>Profiling standards supporting functional requirements less than that required in POSIX.1-2008 may subset both mandatory and
-optional functionality required for POSIX Conformance (see <a href="V1_chap02.html#tag_02_01_03">POSIX Conformance</a>) or XSI Conformance (see
-<a href="V1_chap02.html#tag_02_01_04">XSI Conformance</a>). Such profiles shall organize the subsets into Subprofiling Option Groups.</p>
+<p>Стандарты профилей, поддерживающие функциональные требования меньше, чем того требует POSIX.1-2008,
+ могут subset(?) и обязательную и опциональную функциональность, требуемую 
+ Соответствием POSIX (см. <a href="V1_chap02.html#tag_02_01_03">Соответствие POSIX</a>) 
+или Соответствием XSI (см. <a href="V1_chap02.html#tag_02_01_04">Соответствие XSI</a>). 
+Такие profiles долны организовывать подмножества в Subprofiling Группы опций.</p>
 
-<p>XRAT <a href="../xrat/V4_subprofiles.html#tag_25"><i>Subprofiling Considerations (Informative)</i></a> describes a
-representative set of such Subprofiling Option Groups for use by profiles applicable to specialized realtime systems. POSIX.1-2008
-does not require that the presence of Subprofiling Option Groups be testable at compile-time (as symbols defined in any header) or
-at runtime (via <a href="../functions/sysconf.html"><i>sysconf</i>()</a> or <a href=
+<p>XRAT <a href="../xrat/V4_subprofiles.html#tag_25"><i>Соглашения о подпрофиялх (Разъяснение)</i></a> 
+описывает репрезентативный набор таких Групп опций подпрофилей для использования 
+профилей, применяемых для специализированных систем реального времени. 
+POSIX.1-2008 не требует чтобы присутствующие Subprofiling Группы опций были тестируемы во время компиляции 
+(как символы, определенные в хедерах) или во время выполнения 
+(через <a href="../functions/sysconf.html"><i>sysconf</i>()</a> или <a href=
 "../utilities/getconf.html"><i>getconf</i></a>).</p>
 
-<p>A Subprofiling Option Group may provide basic system functionality that other Subprofiling Option Groups and other options
-depend upon.<a href="V1_chap02.html#tag_foot_1"><sup><small>1</small></sup></a> If a profile of POSIX.1-2008 does not require an implementation
-to provide a Subprofiling Option Group that provides features utilized by a required Subprofiling Option Group (or option),<a href=
-"V1_chap02.html#tag_foot_2"><sup><small>2</small></sup></a> the profile shall specify<a href="V1_chap02.html#tag_foot_3"><sup><small>3</small></sup></a> all of
-the following:</p>
+<p>Группа опций подпрофилей может предоставлять базовую системную функциональность 
+от которой другие группы опций подпрофилей и другие опции зависят.
+<a href="V1_chap02.html#tag_foot_1"><sup><small>1</small></sup></a> 
+Если профиль POSIX.1-2008 не требует реализации предоставления Группы опций подпрофилирования,
+которая предоставляет возможность утилизируемую требованием Группой опций подпроилирования (или опцией),
+<a href="V1_chap02.html#tag_foot_2"><sup><small>2</small></sup></a> 
+Профиль должен задавать <a href="V1_chap02.html#tag_foot_3"><sup><small>3</small></sup></a> все из следующего:</p>
 
 <ul>
 <li>
@@ -1296,36 +1312,44 @@ language permits (or requires) uppercase and lowercase characters to be distinct
 <dl compact>
 <dt><a name="tag_foot_1">1.</a></dt>
 
-<dd>As an example, the File System profiling option group provides underlying support for pathname resolution and file creation
-which are needed by any interface in POSIX.1-2008 that parses a <i>path</i> argument. If a profile requires support for the Device
-Input and Output profiling option group but does not require support for the File System profiling option group, the profile must
-specify how pathname resolution is to behave in that profile, how the O_CREAT flag to <a href=
-"../functions/open.html"><i>open</i>()</a> is to be handled (and the use of the character <tt>'a'</tt> in the <i>mode</i> argument
-of <a href="../functions/fopen.html"><i>fopen</i>()</a> when a pathname argument names a file that does not exist), and specify
-lots of other details.</dd>
+<dd>Как пример, группа опций профилирования файловой системы предоставляет нижележащую поддержку для 
+раскрытия пути-имени и создания файлов,
+которые требуются любым интерфейсом в POSIX.1-2008, который разбирает аргумент <i>пути</i>. 
+Если профиль требует поддержку для группы опций профилирования Устройств ввода и вывода,
+но не требует поддержку группы опций профилирования Файловой системы,
+профиль должен задавать, как раскрытие пути-имени ведет себя в жтом профиле, 
+как <a href="../functions/open.html"><i>open</i>()</a> обрабатывает флаг O_CREAT
+(и использование символа <tt>'a'</tt> в аргументе <i>режим</i> в <a href="../functions/fopen.html"><i>fopen</i>()</a>,
+когда аргумент пути-имени именует файл, который не существует), 
+и задает множество других деталей.</dd>
 
 <dt><a name="tag_foot_2">2.</a></dt>
 
-<dd>As an example, POSIX.1-2008 requires that implementations claiming to support the Range Memory Locking option also support the
-Process Memory Locking option. A profile could require that the Range Memory Locking option had to be supplied without requiring
-that the Process Memory Locking option be supplied as long as the profile specifies everything an application developer or system
-implementor would have to know to build an application or implementation conforming to the profile.</dd>
+<dd>Как пример, POSIX.1-2008 требует, что реализация, заявляющая поддержку опции Блокировки диапозона памяти,
+также подерживает опцию Блокировки памяти процесса. 
+профиль может(could) требовать, что опция Блокировки диапозона памяти должна была поставляться (had to be supplied)
+без требования, что опция Блокировки памяти процесса поставлялась(be supplied) так долго как
+профиль задает все    разработчик приложения или реализатор системы 
+хотели бы зать чтобы собирать приложение или реализацию, соответствующую профилю.</dd>
 
 <dt><a name="tag_foot_3">3.</a></dt>
 
-<dd>Note that the profile could just specify that any use of the features not specified by the profile would produce undefined or
-unspecified results.</dd>
+<dd>Обратите внимание, что профиль может может задавать, что любое использование возможностей,
+не заданных профилем будет(would) неопределенные или неспецифицированные результаты.</dd>
 </dl>
 
 <p>&nbsp;</p>
 
 <a href="V1_chap02.html#top"><span class="topOfPage">return to top of page</span></a><br>
 <hr size="2" noshade>
-<center><font size="2">UNIX &reg; is a registered Trademark of The Open Group.<br>
-POSIX &reg; is a registered Trademark of The IEEE.<br>
-Copyright &copy; 2001-2013 The IEEE and The Open Group, All Rights Reserved<br>
-[ <a href="../mindex.html">Main Index</a> | <a href="contents.html">XBD</a> | <a href=
-"../functions/contents.html">XSH</a> | <a href="../utilities/contents.html">XCU</a> | <a href="../xrat/contents.html">XRAT</a>
+<center><font size="2">UNIX &reg; - зарегестрированная торговая марка Open Group.<br>
+POSIX &reg; - зарегестрированная торговая марка  IEEE.<br>
+Copyright &copy; 2001-2013 The IEEE and The Open Group, Все права защищены<br>
+[ <a href="../mindex.html">Main Index</a> 
+| <a href="contents.html">XBD</a> 
+| <a href="../functions/contents.html">XSH</a> 
+| <a href="../utilities/contents.html">XCU</a> 
+| <a href="../xrat/contents.html">XRAT</a>
 ]</font></center>
 
 <hr size="2" noshade>
@@ -1333,9 +1357,9 @@ Copyright &copy; 2001-2013 The IEEE and The Open Group, All Rights Reserved<br>
 <table summary="Header navigation table" class="nav" width="100%" border="0" cellpadding="0" cellspacing="0">
 <tr class="nav">
 <td class="nav" width="15%" align="left" valign="bottom"><a href="V1_chap01.html" accesskey="P">&lt;&lt;&lt;
-Previous</a></td>
-<td class="nav" width="70%" align="center" valign="bottom"><a href="contents.html">Home</a></td>
-<td class="nav" width="15%" align="right" valign="bottom"><a href="V1_chap03.html" accesskey="N">Next
+Назад</a></td>
+<td class="nav" width="70%" align="center" valign="bottom"><a href="contents.html">Домой</a></td>
+<td class="nav" width="15%" align="right" valign="bottom"><a href="V1_chap03.html" accesskey="N">Вперед
 &gt;&gt;&gt;</a></td>
 </tr>
 </table>
